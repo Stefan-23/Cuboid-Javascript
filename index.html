@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title> Function </title>
+	<style>
+	body{
+	background-image:url("pics/math.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	margin:0px;
+	padding:0px;
+	}
+	#wrapper{
+	background-color:#228B22;
+	border: 5px solid #FF8C00;
+	margin: 200px 200px 0px 500px;
+	width: 300px;
+	padding: 20px;
+	font-family: Aerial Black, sans-serif;
+	color: #
+	}
+	
+	</style>
+</head>
+<body>
+
+    <div id= "wrapper"> 
+    <script>
+	
+	    var a = parseInt(prompt("Hello! You want to count surface of your cuboid? Let's start with first side:"));
+		var b = parseInt(prompt("Then your second side:"));
+		var c = parseInt(prompt("And last side:"));
+		
+		if(a > 0 && b > 0 && c >0){
+           	
+		
+		
+        function cuboidSides(a,b,c){
+ 		    document.write("First side is:" + a +"cm" + "<br>");
+			document.write("Second side is:" + b + "cm" + "<br>");
+			document.write("Third side is:" + c + "cm" +"<br>");
+		
+		}
+        function cuboidSurface(a,b,c){
+		    var P = 2*(a*b + a*c + b*c);
+			document.write("Surface of your cuboid is:" + P + "cm" + "<sup> 2 </sup>" + "<br>");
+		
+		}		
+	
+	cuboidSides(a,b,c);
+	cuboidSurface(a,b,c);
+    }else{
+        document.write("Your numbers can't be smaller than 0");
+	}
+	
+	</script>
+    </div>
+
+</body>
+</html>
